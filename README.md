@@ -25,13 +25,7 @@ github: https://github.com/Brichka
 #Video
 https://streamable.com/i4cqrr
 
-# Dependencies
-qb-core
 
-qb-spawn - Spawn selector
 
-qb-apartments - For giving the player a apartment after creating a character.
 
-qb-clothing - For the character creation and saving outfits.
 
-qb-weathersync - For adjusting the weather while player is creating a character.
