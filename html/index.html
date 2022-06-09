@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Noto+Kufi+Arabic:wght@900&family=Noto+Naskh+Arabic:wght@600&family=Poppins:ital,wght@1,800&family=Reem+Kufi:wght@700&family=Tajawal:wght@800&display=swap" rel="stylesheet">
+    <title>Qbus Multicharacter</title>
+</head>
+    <body>
+        <div class="container">               
+            <div class="main-screen">
+                <div class="welcomescreen">
+                    <div class="loading-rondje">
+                        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>       
+                        
+                    </div>
+                </div>
+
+
+                <div class="char-selector" onclick="console.log('Delete?');"charselector();">
+                    <div class="char-arrow">
+                        <!-- <i class="material-icons" >arrow_drop_down</i> -->
+                </div>
+            </div>
+			 
+               <div class="characters-list">
+                    <div class="character" id="char-1" data-cid="">
+						<span id="slot-name"><span id="cid"></span></span>
+                    </div>                   
+                 </div> 
+					
+                <div class="char-buttons">
+                    <a class="char-play tooltipped" data-position="top" data-tooltip="السفر" onclick="chatplay();"><i class="fas fa-suitcase"></i></a>
+                    <a class="char-info tooltipped" data-position="top" data-tooltip="الجواز"><i class="fas fa-list-alt"></i></a>
+                    <a class="char-delete tooltipped" data-position="top" data-tooltip="حذف" onclick="deletePlayer();"><i class="fas fa-trash-alt"></i></a>
+                </div>
+
+                <div class="character-info" dir="rtl" lang="ar" style="font-family: 'Tajawal', sans-serif;">
+                    <div class="char-info-titel"><i class="material-icons" id="char-info-icon">info</i><span id="char-info-titel">الهوية الشخصية</span></div>
+                    <div class="character-info-valid">
+                        <span id="no-char">لم يتم إنشاء أي شخصية</span>
+                    </div>
+                </div>
+
+                <div class="character-buttons">
+                    <div class="character-btn" id="play"><p id="play-text">حدد الشخصية</p></div>
+                    <div class="character-btn" id="delete" onclick="deletePlayer();"><p id="delete-text">حدد شخصية<</p></div>
+                </div>
+            
+                <div class="Expert-NewCharacterRegister">
+                    <div class="Expert-RegisterMainMenu">
+                        <div class="Expert-Register-ChooseGender">
+						    <img data-gender="woman" id="Expert-woman" class="Expert-Register-ImageStyle" style="float: right; transform: scaleX(-1);" src="https://cdn.discordapp.com/attachments/877595408325574656/878254563063369818/female.png">
+                            <img data-gender="man" id="Expert-man" class="Expert-Register-ImageStyle" style="float: left;" src="https://cdn.discordapp.com/attachments/877595408325574656/878254579622502471/male.png">
+                            
+                        </div>
+                        <div class="Expert-Register-FormUser">
+                            <div class="Expert-Register-Label" dir="rtl" lang="ar">
+                                <div class="ExperttextBodyForm">الاسم الأول</div>
+                                <input id="first_name" class="Expert-Register-InputStyle" type="text"/>
+                            </div>
+
+                            <div class="Expert-Register-Label" dir="rtl" lang="ar">
+                                <div class="ExperttextBodyForm">اللقب</div>
+                                <input id="last_name" class="Expert-Register-InputStyle" type="text"/>
+                            </div>
+
+                            <div class="Expert-Register-Label" dir="rtl" lang="ar">
+                                <div class="ExperttextBodyForm">الجنسية</div>
+                                <input id="nationality" class="Expert-Register-InputStyle" type="text"/>
+                            </div>
+
+                            <div class="Expert-Register-Label" dir="rtl" lang="ar">
+                                <div class="ExperttextBodyForm">تاريخ الميلاد</div>
+                                <input id="birthdate" class="Expert-Register-InputStyle" min="1900-01-01" max="2999-12-31" type="date"/>
+                            </div>
+
+                            <div class="Expert-Register-Label" style="margin-left: 12%;">
+                                <div class="Expert-Register-btn-main RegisterRed" onclick="closereg()">إلغاء</div>
+                                <div class="Expert-Register-btn-main RegisterGreen" id="create">إنشاء</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+				<div class="SelectChar-NewMenu">
+                    <div class="SelectChar-header">حذف الشخصية</div>
+                    <div class="SelectChar-Border-Btn"></div>
+                    <div class="SelectChar-DeleteChar BodyNewMenu" id="accept-delete"><p id="accept-text" style="font-family: 'Tajawal', sans-serif;">تأكيد</p></div>
+                    <div class="SelectChar-SpawnChar BodyNewMenu" id="cancel-delete"><p id="cancel-text" style="font-family: 'Tajawal', sans-serif;">رجوع</p></div>
+                </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
