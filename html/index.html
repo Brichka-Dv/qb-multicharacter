@@ -43,21 +43,21 @@
                  </div> 
 					
                 <div class="char-buttons">
-                    <a class="char-play tooltipped" data-position="top" data-tooltip="السفر" onclick="chatplay();"><i class="fas fa-suitcase"></i></a>
-                    <a class="char-info tooltipped" data-position="top" data-tooltip="الجواز"><i class="fas fa-list-alt"></i></a>
-                    <a class="char-delete tooltipped" data-position="top" data-tooltip="حذف" onclick="deletePlayer();"><i class="fas fa-trash-alt"></i></a>
+                    <a class="char-play tooltipped" data-position="top" data-tooltip="Play" onclick="chatplay();"><i class="fas fa-suitcase"></i></a>
+                    <a class="char-info tooltipped" data-position="top" data-tooltip="Info"><i class="fas fa-list-alt"></i></a>
+                    <a class="char-delete tooltipped" data-position="top" data-tooltip="Delete" onclick="deletePlayer();"><i class="fas fa-trash-alt"></i></a>
                 </div>
 
                 <div class="character-info" dir="rtl" lang="ar" style="font-family: 'Tajawal', sans-serif;">
-                    <div class="char-info-titel"><i class="material-icons" id="char-info-icon">info</i><span id="char-info-titel">الهوية الشخصية</span></div>
+                    <div class="char-info-titel"><i class="material-icons" id="char-info-icon">info</i><span id="char-info-titel">character information</span></div>
                     <div class="character-info-valid">
-                        <span id="no-char">لم يتم إنشاء أي شخصية</span>
+                        <span id="no-char">Select a character slot to see all information about your character.</span>
                     </div>
                 </div>
 
                 <div class="character-buttons">
-                    <div class="character-btn" id="play"><p id="play-text">حدد الشخصية</p></div>
-                    <div class="character-btn" id="delete" onclick="deletePlayer();"><p id="delete-text">حدد شخصية<</p></div>
+                    <div class="character-btn" id="play"><p id="play-text">select character</p></div>
+                    <div class="character-btn" id="delete" onclick="deletePlayer();"><p id="delete-text">select character<</p></div>
                 </div>
             
                 <div class="Expert-NewCharacterRegister">
@@ -69,28 +69,28 @@
                         </div>
                         <div class="Expert-Register-FormUser">
                             <div class="Expert-Register-Label" dir="rtl" lang="ar">
-                                <div class="ExperttextBodyForm">الاسم الأول</div>
+                                <div class="ExperttextBodyForm">First Name</div>
                                 <input id="first_name" class="Expert-Register-InputStyle" type="text"/>
                             </div>
 
                             <div class="Expert-Register-Label" dir="rtl" lang="ar">
-                                <div class="ExperttextBodyForm">اللقب</div>
+                                <div class="ExperttextBodyForm">Last Name</div>
                                 <input id="last_name" class="Expert-Register-InputStyle" type="text"/>
                             </div>
 
                             <div class="Expert-Register-Label" dir="rtl" lang="ar">
-                                <div class="ExperttextBodyForm">الجنسية</div>
+                                <div class="ExperttextBodyForm">Nationality</div>
                                 <input id="nationality" class="Expert-Register-InputStyle" type="text"/>
                             </div>
 
                             <div class="Expert-Register-Label" dir="rtl" lang="ar">
-                                <div class="ExperttextBodyForm">تاريخ الميلاد</div>
+                                <div class="ExperttextBodyForm">Birth Date</div>
                                 <input id="birthdate" class="Expert-Register-InputStyle" min="1900-01-01" max="2999-12-31" type="date"/>
                             </div>
 
                             <div class="Expert-Register-Label" style="margin-left: 12%;">
-                                <div class="Expert-Register-btn-main RegisterRed" onclick="closereg()">إلغاء</div>
-                                <div class="Expert-Register-btn-main RegisterGreen" id="create">إنشاء</div>
+                                <div class="Expert-Register-btn-main RegisterRed" onclick="closereg()">Return</div>
+                                <div class="Expert-Register-btn-main RegisterGreen" id="create">Confirm</div>
                             </div>
 
                         </div>
@@ -98,10 +98,10 @@
                 </div>
 
 				<div class="SelectChar-NewMenu">
-                    <div class="SelectChar-header">حذف الشخصية</div>
+                    <div class="SelectChar-header">Delete Character</div>
                     <div class="SelectChar-Border-Btn"></div>
-                    <div class="SelectChar-DeleteChar BodyNewMenu" id="accept-delete"><p id="accept-text" style="font-family: 'Tajawal', sans-serif;">تأكيد</p></div>
-                    <div class="SelectChar-SpawnChar BodyNewMenu" id="cancel-delete"><p id="cancel-text" style="font-family: 'Tajawal', sans-serif;">رجوع</p></div>
+                    <div class="SelectChar-DeleteChar BodyNewMenu" id="accept-delete"><p id="accept-text" style="font-family: 'Tajawal', sans-serif;">Confirm</p></div>
+                    <div class="SelectChar-SpawnChar BodyNewMenu" id="cancel-delete"><p id="cancel-text" style="font-family: 'Tajawal', sans-serif;">Return</p></div>
                 </div>
         </div>
     </body>
