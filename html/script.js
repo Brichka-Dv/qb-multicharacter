@@ -208,26 +208,26 @@ $('.disconnect-btn').click(function(e){
 
 function setupCharInfo(cData) {
     if (cData == 'empty') {
-        $('a.char-info').attr('<div class="tooltipchar"><span id="no-char">لم يتم إنشاء أي شخصية</span></div>');
+        $('a.char-info').attr('<div class="tooltipchar"><span id="no-char">The selected character slot is not in use yet.</span></div>');
         $('.char-info').tooltip();
         $('.char-info').addClass('disabled')
         $('.char-delete').addClass('disabled')
     } else {
-        var gender = "ذكر"
-        if (cData.charinfo.gender == 1) { gender = "أنثى" }
+        var gender = "Man"
+        if (cData.charinfo.gender == 1) { gender = "Woman" }
         $('.char-info').removeClass('disabled')
         $('.char-delete').removeClass('disabled')
-        $('a.char-info').attr('data-tooltip','<div class="tooltipchar" dir="rtl" lang="ar">' +
-        '<div class="character-info-box"><span id="info-label">الاسم: </span><span class="char-info-js">'+cData.charinfo.firstname+' '+cData.charinfo.lastname+'</span></div>' +
-        '<div class="character-info-box"><span id="info-label">تاريخ الولادة: </span><span class="char-info-js">'+cData.charinfo.birthdate+'</span></div>' +
-        '<div class="character-info-box"><span id="info-label">الجنس: </span><span class="char-info-js">'+gender+'</span></div>' +
-        '<div class="character-info-box"><span id="info-label">اليلد: </span><span class="char-info-js">'+cData.charinfo.nationality+'</span></div>' +
-        '<div class="character-info-box"><span id="info-label">الوظيفة: </span><span class="char-info-js">'+cData.job.label+'</span></div>' +
-        '<div class="character-info-box"><span id="info-label">العصابة: </span><span class="char-info-js">'+cData.gang.label+'</span></div>' +
-        '<div class="character-info-box"><span id="info-label">الكاش: </span><span class="char-info-js">$ '+cData.money.cash+'</span></div>' +
-        '<div class="character-info-box"><span id="info-label">البنك: </span><span class="char-info-js">$ '+cData.money.bank+'</span></div><br>' +
-        '<div class="character-info-box"><span id="info-label">رقم الهاتف: </span><span class="char-info-js">'+cData.charinfo.phone+'</span></div>' +
-        '<div class="character-info-box"><span id="info-label">رقم حساب البنكي: </span><span class="char-info-js">'+cData.charinfo.account+'</span></div></div>');
+        $('a.char-info').attr('data-tooltip','<div class="tooltipchar">' +
+        '<div class="character-info-box"><span id="info-label">Name: </span><span class="char-info-js">'+cData.charinfo.firstname+' '+cData.charinfo.lastname+'</span></div>' +
+        '<div class="character-info-box"><span id="info-label">Birth date: </span><span class="char-info-js">'+cData.charinfo.birthdate+'</span></div>' +
+        '<div class="character-info-box"><span id="info-label">Gender: </span><span class="char-info-js">'+gender+'</span></div>' +
+        '<div class="character-info-box"><span id="info-label">Nationality: </span><span class="char-info-js">'+cData.charinfo.nationality+'</span></div>' +
+        '<div class="character-info-box"><span id="info-label">Job: </span><span class="char-info-js">'+cData.job.label+'</span></div>' +
+        '<div class="character-info-box"><span id="info-label">Gang: </span><span class="char-info-js">'+cData.gang.label+'</span></div>' +
+        '<div class="character-info-box"><span id="info-label">Cash: </span><span class="char-info-js">$ '+cData.money.cash+'</span></div>' +
+        '<div class="character-info-box"><span id="info-label">Bank: </span><span class="char-info-js">$ '+cData.money.bank+'</span></div><br>' +
+        '<div class="character-info-box"><span id="info-label">Phone number: </span><span class="char-info-js">'+cData.charinfo.phone+'</span></div>' +
+        '<div class="character-info-box"><span id="info-label">Account number: </span><span class="char-info-js">'+cData.charinfo.account+'</span></div></div>');
         $('.char-info').tooltip();
     }
 }
