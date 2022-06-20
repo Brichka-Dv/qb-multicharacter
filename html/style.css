@@ -1217,7 +1217,7 @@ input[type="date"]::-webkit-clear-button {
     left: 50%;
     width: 25%;
     background: #202731de;
-    font-family: 'Tajawal', sans-serif;
+    font-family: sans-serif;
     font-size: 1.6vh;
     box-shadow: 1px 1px 6px rgb(5, 5, 5);
     padding: 1%;
@@ -1241,7 +1241,7 @@ input[type="date"]::-webkit-clear-button {
     margin: 2% 5%;
 }
 
-.Expert-Register-InputStyle {
+.Expert-Register-InputStyle{
     padding-left: 10px;
     margin-bottom: 4%;
     margin-left: 4%;
@@ -1292,11 +1292,9 @@ input[type="date"]::-webkit-clear-button {
     background: #c27e47;
 }
 
-.ExperttextBodyForm {
-    margin-right: 3%;
+.ExperttextBodyForm{
     width: 23%;
-    text-align: right;
-    font-family: 'Tajawal', sans-serif;
+    text-align: center;
 }
 
 .SelectChar-NewMenu {
