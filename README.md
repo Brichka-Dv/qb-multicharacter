@@ -25,8 +25,7 @@ ensure qb-clothing
 ensure qb-weathersync
 ```
 # rights 
-- discord : 
--Yassine https://discord.gg/p8HRkBZjh2
+- discord : https://discord.gg/p8HRkBZjh2
 - github: https://github.com/Brichka 
 
 
