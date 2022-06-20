@@ -1,20 +1,21 @@
 .
 # qb-multicharacter
-Brichka multicharacter reprogramming running on QBcore
+Multi Character Feature for QB-Core Framework
 
 # Screenshots
-![This is an image](https://i.imgur.com/pDAac1S.png)
-![This is an image](https://i.imgur.com/YRUFIGO.png)
-![This is an image](https://i.imgur.com/4FW11No.png)
-![This is an image](https://i.imgur.com/y5RIG0i.jpeg)
+![This is an image](https://i.imgur.com/LdveJIK.png)
+![This is an image](https://i.imgur.com/CcPlDp4.png)
+![This is an image](https://i.imgur.com/JdmTdS3.png)
+![This is an image](https://i.imgur.com/5OYnYIN.png)
+![This is an image](https://i.imgur.com/n3aIkKa.png)
 
 # Video
 https://streamable.com/i4cqrr
 
 # Installation
 ## Manual
-Download the script and put it in the [qb] directory.
-Add the following code to your server.cfg/resouces.cfg
+- Download the script and put it in the [qb] directory.
+- Add the following code to your server.cfg/resouces.cfg
 ```
 ensure qb-core
 ensure qb-multicharacter
