@@ -26,7 +26,7 @@ ensure qb-weathersync
 ```
 # rights 
 - discord : 
-```Yassine Brichka#4079```
+-Yassine https://discord.gg/p8HRkBZjh2
 - github: https://github.com/Brichka 
 
 
