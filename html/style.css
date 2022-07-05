@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lateef&family=Noto+Kufi+Arabic:wght@900&family=Noto+Naskh+Arabic:wght@600&family=Poppins:ital,wght@1,800&family=Reem+Kufi:wght@700&family=Tajawal:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
 body {
     user-select: none;
     -moz-user-select: none;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .container {
@@ -104,7 +106,7 @@ body {
     line-height: 2;
     top: 1vh;
     font-size: 2.5vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.2vh;
     font-weight: bold;
     text-align: left;
@@ -124,7 +126,7 @@ body {
 
 .streamermode p {
     font-size: 1.6vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.2vh;
     font-weight: bold;
     color: white;
@@ -154,7 +156,7 @@ body {
     color: white;
     left: 0;
     font-size: 1.5vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.2vh;
     font-weight: bold;
     text-align: left;
@@ -165,7 +167,7 @@ body {
     left: 0;
     width: fit-content;
     font-size: 1.4vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.2vh;
     text-align: left;
     opacity: 0.8;
@@ -212,7 +214,7 @@ body {
     line-height: 2;
     top: 1vh;
     font-size: 2.5vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.2vh;
     font-weight: bold;
     text-align: right;
@@ -280,7 +282,7 @@ body {
 
 .chartext p {
     font-size: 1.5vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.2vh;
     font-weight: bold;
     color: white;
@@ -316,7 +318,7 @@ body {
     height: 30px;
     background-color: #881a1a;
     border-bottom: 2px solid #fff;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     box-shadow: inset 0px 0px 150px 0px rgba(255, 255, 255, 0.1);
 }
 
@@ -375,16 +377,23 @@ body {
     text-align: center;
     color: white;
     line-height: 24px;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .character {
     position: relative;
-    display: inline-block;
-    width: 10vh;
-    height: 10vh;
-    top: 48vh;
-    left: 93vh;
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    margin-top: 1.5vh;
+    background-color:  #202731de;
+	opacity: 0.5;
+	box-shadow: 1px 1px 6px rgb(5, 5, 5);
+    font-family: 'Lato' monospace;
+    border-bottom: 0.4vh solid #c5c5c5c5;
+    transition: .3s linear;
+	
+
 }
 
 .tooltipchar {
@@ -420,10 +429,10 @@ body {
 .char-buttons {
     display: none;
     position: relative;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 2vh;
     padding: 1%;
-    top: 80%;
+    top: 50%;
     left: 42.5%;
 }
 
@@ -431,7 +440,7 @@ body {
     position: relative;
     color: whitesmoke;
     background: #202731c2;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     box-shadow: 1px 1px 6px rgb(5, 5, 5);
     transition: 0.25s;
     padding: 0.7%;
@@ -490,7 +499,7 @@ body {
 
 .character>span {
     color: rgb(255, 255, 255);
-    font-family: 'Tajawal' sans-serif !important;
+    font-family: 'Oswald' sans-serif !important;
 }
 
 #cid {
@@ -511,31 +520,30 @@ body {
 }
 
 #slot-name {
+	color: rgb(255, 255, 255);
     position: absolute;
-    color: rgb(255, 255, 255);
     font-size: 0vh;
-    top: 4.0vh;
+    top: 1.5vh;
     left: 8.0vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 #slot-icon {
     position: relative;
     font-size: 5vh;
-    top: 2.5vh;
-    left: 2.5vh;
-    padding-right: 2vh;
+    padding-right: 4vh;
+	color: rgb(142, 224, 116, 0.5);
     padding-bottom: 4vh;
+
 }
 
 #slot-icon2 {
     position: relative;
     font-size: 5vh;
-    top: 2.5vh;
-    left: 2.5vh;
+
     padding-right: 2vh;
     padding-bottom: 4vh;
-    color: #7952B3;
+    color: rgb(245, 161, 91);
 }
 
 .character-btn {
@@ -592,7 +600,7 @@ body {
     height: 60vh;
     right: 20vh;
     top: -40%;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
     overflow: visible !important;
 }
@@ -602,7 +610,7 @@ body {
     font-size: 2.8vh;
     color: white;
     right: 2vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     overflow: visible !important;
 }
 
@@ -633,7 +641,7 @@ body {
 
 .character-info-valid {
     position: relative;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     top: 10%;
     overflow: visible !important;
 }
@@ -646,7 +654,7 @@ body {
     height: 2vh;
     margin-bottom: 1vh;
     /* border-bottom: .1vh solid white; */
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.1vh;
     text-align: left;
 }
@@ -684,7 +692,7 @@ body {
     background-color: #202731c2;
     border-radius: 5px;
     padding: 30px;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     box-shadow: 1px 1px 6px rgb(5, 5, 5);
     color: #ededed;
     overflow: visible !important;
@@ -698,13 +706,13 @@ body {
     text-align: left;
     font-size: 2vh;
     line-height: 29px;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     overflow: visible !important;
 }
 
 .characters-delete-block-header>p {
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     overflow: visible !important;
 }
 
@@ -760,7 +768,7 @@ body {
     color: black;
     text-align: center;
     padding-top: 1vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     overflow: visible !important;
     text-transform: uppercase;
 }
@@ -769,7 +777,7 @@ body {
     color: black;
     text-align: center;
     padding-top: 1vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     overflow: visible !important;
     text-transform: uppercase;
 }
@@ -784,7 +792,7 @@ body {
     /* padding-top: 2vh; */
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.54);
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     border-bottom: .5vh solid #7952b3;
     font-size: 1.6vh;
     border-radius: 1vh;
@@ -799,7 +807,7 @@ body {
     text-align: center;
     font-size: 1.8vh;
     line-height: 5vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     border-bottom: .3vh solid #7952b3;
 }
 
@@ -831,7 +839,7 @@ body {
     border-radius: 2px 2px 4px 4px;
     box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
     border: 1px solid #7952b3;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
@@ -876,7 +884,7 @@ body {
     border-radius: 2px 2px 4px 4px;
     box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
     border: 1px solid #7952b3;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-align-last: center;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -915,7 +923,7 @@ select::-ms-expand {
 
 input[type="date"] {
     color: white;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
 }
 
@@ -940,7 +948,7 @@ input[type="date"]::-webkit-clear-button {
 #birthdate {
     color: white;
     text-align: center;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .character-reg-btn {
@@ -965,7 +973,7 @@ input[type="date"]::-webkit-clear-button {
     text-align: center;
     line-height: 34px;
     color: white;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.3vh;
 }
 
@@ -1006,7 +1014,7 @@ input[type="date"]::-webkit-clear-button {
     margin-right: auto;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.54);
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     border-bottom: 4px solid #40737c;
     border-radius: 0px 0px 10px 10px;
 }
@@ -1020,7 +1028,7 @@ input[type="date"]::-webkit-clear-button {
     text-align: center;
     font-size: 1.1vh;
     line-height: 30px;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     border-bottom: 2px solid #b12424;
 }
 
@@ -1028,7 +1036,7 @@ input[type="date"]::-webkit-clear-button {
     position: relative;
     top: 30px;
     color: rgb(255, 255, 255);
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin-top: 20px;
 }
 
@@ -1037,7 +1045,7 @@ input[type="date"]::-webkit-clear-button {
     font-size: 1.2vh;
     padding-left: 10px;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 #log-changes {
@@ -1046,7 +1054,7 @@ input[type="date"]::-webkit-clear-button {
     left: 30px;
     font-size: 1.0vh;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .welcomescreen {
@@ -1071,7 +1079,7 @@ input[type="date"]::-webkit-clear-button {
     top: 45px;
     left: 20px;
     font-size: 3.0vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: bolder;
 }
 
@@ -1096,7 +1104,7 @@ input[type="date"]::-webkit-clear-button {
     line-height: 3.6vh;
     color: white;
     text-transform: uppercase;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 ::-webkit-scrollbar-track {
@@ -1129,7 +1137,7 @@ input[type="date"]::-webkit-clear-button {
 .loading-rondje>p {
     color: white;
     margin-bottom: -1vh;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-shadow: 1px 1px 0px #00000085;
 }
 
@@ -1217,7 +1225,7 @@ input[type="date"]::-webkit-clear-button {
     left: 50%;
     width: 25%;
     background: #202731de;
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.6vh;
     box-shadow: 1px 1px 6px rgb(5, 5, 5);
     padding: 1%;
@@ -1268,7 +1276,7 @@ input[type="date"]::-webkit-clear-button {
     width: 30%;
     padding: 2%;
     text-align: center;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     border-radius: 10px;
     color: black;
     margin: 0 2%;
@@ -1306,7 +1314,7 @@ input[type="date"]::-webkit-clear-button {
     border-radius: 5px;
     background: #202731c2;
     color: whitesmoke;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.8vh;
     box-shadow: 1px 1px 6px rgb(5, 5, 5);
     text-align: center;
@@ -1314,7 +1322,7 @@ input[type="date"]::-webkit-clear-button {
 }
 
 .BodyNewMenu {
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Oswald', sans-serif;
     display: inline-block;
     width: 40%;
     border-radius: 10px;
@@ -1349,4 +1357,71 @@ input[type="date"]::-webkit-clear-button {
     margin: 4% 10%;
     width: 80%;
     border-bottom: 0.3vh solid rgb(255, 255, 255);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.side_bar{
+  position: relative;
+  top: 20%;
+  left: -100%;
+  width: 200px;
+  height: auto;
+  background: transparent;
+  overflow: visible !important;
+ 
+}
+.side_bar .title{
+  display: flex;
+  justify-content: space-evenly;
+}
+.side_bar .title .logo{
+  font-size: 27px;
+  font-weight: 600;
+  color: #31344b;
+}
+.side_bar ul{
+  margin-top: 35px;
+  list-style: none;
+}
+.side_bar ul a{
+  color: #31344b;
+  text-decoration: none;
+  display: block;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 6px;
+  box-shadow: -3px -3px 7px #ffffff,
+             3px 3px 5px #ceced1;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.side_bar ul i{
+  margin-right: 10px;
+}
+
+
+#check{
+  display: none;
+}
+.bars1{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 15px;
+}
+.cancel1{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  
+}
+#check:checked ~ .side_bar{
+  left: 0;
 }
