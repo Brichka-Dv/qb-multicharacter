@@ -237,7 +237,7 @@ function setupCharacters(characters) {
         $('#char-'+char.cid).html("");
         $('#char-'+char.cid).data("citizenid", char.citizenid);
         setTimeout(function(){
-            //$('#char-'+char.cid).html('<span id="slot-icon2" class="material-icons">account_box</span><span id="slot-name">'+char.charinfo.firstname+' '+char.charinfo.lastname+'</span>');
+            $('#char-'+char.cid).html('<span id="slot-icon2" class="material-icons">account_box</span><span id="slot-name">'+char.charinfo.firstname+' '+char.charinfo.lastname+'</span>');
             $('#char-'+char.cid).data('cData', char)
             $('#char-'+char.cid).data('cid', char.cid)
         }, 100)
@@ -350,12 +350,9 @@ $(document).on('click', '#cancel-delete', function(e){
     $('.characters-block').css("filter", "none");
     $('.SelectChar-NewMenu').fadeOut(150);
 });
-function setCharactersList() {
-    $('.characters-list').html('<div class="character" id="char-1" data-cid=""></div>');
-	loadingCharacter(true);
-}
+
 function refreshCharacters() {
-    $('.characters-list').html('<div class="character" id="char-1" data-cid=""></div>')    
+    $('.characters-list').show();  
     setTimeout(function(){
         $(selectedChar).removeClass("char-selected");
         selectedChar = null;
