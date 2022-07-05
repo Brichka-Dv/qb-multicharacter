@@ -3,14 +3,12 @@
 Multi Character Feature for QB-Core Framework
 
 # Screenshots
-![This is an image](https://i.imgur.com/LdveJIK.png)
-![This is an image](https://i.imgur.com/CcPlDp4.png)
+![This is an image](https://i.imgur.com/Ek8F3BB.png)
+![This is an image](https://i.imgur.com/xGaNwiO.png)
+![This is an image](https://i.imgur.com/F2T2hc4.png)
 ![This is an image](https://i.imgur.com/JdmTdS3.png)
 ![This is an image](https://i.imgur.com/5OYnYIN.png)
 ![This is an image](https://i.imgur.com/n3aIkKa.png)
-
-# Video
-https://streamable.com/i4cqrr
 
 # Installation
 ## Manual
