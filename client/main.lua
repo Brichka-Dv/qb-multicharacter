@@ -161,10 +161,7 @@ RegisterNUICallback('cDataPed', function(nData, cb)
                 end)
             else
                 CreateThread(function()
-                    local randommodels = {
-                        "mp_m_freemode_01",
-                        "mp_f_freemode_01",
-                    }
+                    local randommodels = Config.PlayerModels
                     model = GetHashKey(randommodels[math.random(1, #randommodels)])
                     RequestModel(model)
                     while not HasModelLoaded(model) do
@@ -183,10 +180,7 @@ RegisterNUICallback('cDataPed', function(nData, cb)
         end, cData.citizenid)
     else
         CreateThread(function()---شخصية جديدة
-            local randommodels = {
-                "mp_m_freemode_01",
-                "mp_f_freemode_01",
-            }
+            local randommodels = Config.PlayerModels
             local model = GetHashKey(randommodels[math.random(1, #randommodels)])
             RequestModel(model)
             while not HasModelLoaded(model) do
