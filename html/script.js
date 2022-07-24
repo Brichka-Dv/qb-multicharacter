@@ -109,6 +109,9 @@ start = function() {
     $('.bars').fadeOut(0)
 	$('.char-buttons').fadeOut(0);
 	$('.char-selector').show(); 
+	$.post('https://qb-multicharacter/cDataPed', JSON.stringify({
+                cData: cDataPed
+    }));
     $(".welcomescreen").fadeOut(0); 
     MultiCharacters.resetAll();
     setTimeout(function(){
@@ -118,9 +121,6 @@ start = function() {
             $.post('https://qb-multicharacter/setupCharacters');
             setTimeout(function(){
                 MultiCharacters.resetAll();
-									$.post('https://qb-multicharacter/cDataPed', JSON.stringify({
-                cData: cDataPed
-    }));
                 $(".welcomescreen").fadeOut(150);
                 $('.bars').fadeIn(1000)
                 //MultiCharacters.fadeInDown('.character-info', '20%', 400);
